@@ -1,32 +1,177 @@
-<!-- นี่คือโครงสร้างหน้าเว็บทังหมด ้ -->
 <!DOCTYPE html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<title>หน้าแนะนำตัวของฉัน</title>
-<style>
-body {
-background-color: #011C75; color: #333;
-text-align: center; padding: 50px;
-
-}
-.card {
-background: white; border-radius: 50px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-max-width: 500px; margin: 0 auto; padding: 30px;
-
-}
-h1 { color: #2c3e50; }
-p { font-size: 18px; line-height: 1.6; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEENAT — Percussion / Music Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="card">
-<h1>ยินดีต้อนรับสู่โปรไฟล์ของฉัน </h1>
-<p>สวัสดีครับ! ผมชื่อ <strong>ณัฐรัฐ ศรีสวัสดิ์ (Natarat Srisawat)</strong></p>
-<p>ขณะนี้กำลังศึกษา/สนใจด้าน College of Music</p>
-<p>นี่คือเว็บไซต์แรกของผมที่โฮสต์บน GitHub Pages!</p>
-<a href="portfolio.html" style="display:inline-block; background:#3498db; color:white; padding:10px 20px; text-decoration:none; border-radius:5px; margin-top:15px;">👍ดูแฟ้มสะสมผลงานของผม</a>
-</div>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a href="#home" class="brand">PEENAT<span>®</span></a>
+    <div class="top-label">PERCUSSION / 2026</div>
+    <button class="menu-toggle" aria-label="เปิดเมนู">MENU</button>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="#home">01 / HOME</a>
+    <a href="#about">02 / ABOUT</a>
+    <a href="#music">03 / MUSIC</a>
+    <a href="#works">04 / PORTFOLIO</a>
+    <a href="#contact">05 / CONTACT</a>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-number">01</div>
+
+      <div class="hero-copy">
+        <p class="mini-title">WESTERN MUSIC STUDENT</p>
+        <h1>PLAY<br><em>THE</em><br>RHYTHM.</h1>
+        <p class="hero-description">
+          สวัสดีครับ ผมนายณัฐรัฐ ศรีสวัสดิ์ 
+ ชั้นมัธยมศึกษาปีที่ 6/5 แผนการเรียนเตรียมวิศวะ — นักเรียนดนตรีผู้หลงใหลในเสียงของ Percussion
+          จากจังหวะเล็ก ๆ สู่เป้าหมายที่ใหญ่กว่าเดิม
+        </p>
+        <a class="circle-link" href="#about">SCROLL<br>DOWN ↓</a>
+      </div>
+
+      <div class="portrait-stage">
+        <div class="portrait-frame">
+          <img src="images/profile.jpg" alt="รูปโปรไฟล์ของพีณัฐ">
+        </div>
+        <div class="portrait-caption">PORTRAIT / 001</div>
+        <div class="stamp">PERC<br>26</div>
+      </div>
+
+      <div class="hero-note">KEEP<br>THE<br>TIME.</div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="section-head">
+        <span>02</span>
+        <p>ABOUT ME</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="big-word">WHO<br>AM I<span>?</span></div>
+        <div class="about-text">
+          <p class="lead">
+           รู้จักผมให้มากขึ้น 
+          </p>
+          <p>
+            ผมมีประสบการณ์ด้าน Percussion จากการเล่นวงดุริยางค์
+            โดยเฉพาะ Concert Snare และกำลังพัฒนาทักษะ
+            Marimba, Glockenspiel และ Timpani เพื่อเตรียมตัว
+            ศึกษาต่อด้านดนตรีตะวันตกในระดับมหาวิทยาลัย
+          </p>
+
+          <div class="facts">
+            <div><b>ข้อมูลส่วนตัว</b><span>เกิดวันที่ 26 ธันวาคม 2551
+เชื่อชาติไทย สัญชาติไทย</span></div>
+            <div><b>กำลังศึกษา</b><span>แผนการเรียนเตรียมวิศวะ
+โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"</span></div>
+            <div><b>เส้นทางอาชีพ</b><span>ครูดนตรี สอนดนตรีมอบความรู้ให้แก่คนที่สนใจในดนตรี</span></div>
+            <div><b>เป้าหมายการศึกษา</b><span>คณะวิทยาลัยการดนตรี สาขาครุศาสตร์บัณฑิต วิชาดนตรีตะวันตก มหาวิทยาลัยราชภัฏบ้านสมเด็จเจ้าพระยา</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music" class="music section">
+      <div class="section-head light">
+        <span>03</span>
+        <p>THE SOUND</p>
+      </div>
+
+      <div class="music-title">
+        <h2>ประวัติ<br><span>สถาบัน</span><br>การศึกษา</h2>
+        <div class="music-circle">LISTEN<br>FEEL<br>PLAY</div>
+      </div>
+
+      <div class="instrument-row">
+        <article>
+          <span>01</span>
+          <h3>อนุบาล</h3>
+          <p>โรงเรียนเจริญสุขวิทยา</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>ประถมศึกษา</h3>
+          <p>โรงเรียนเจริญสุขวิทยา</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>มัธยมศึกษา</h3>
+          <p>โรงเรียนบ้านบึง"อุตสาหกรรมนุเคราะห์"</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="works" class="works section">
+      <div class="section-head">
+        <span>04</span>
+        <p>PORTFOLIO</p>
+      </div>
+
+      <p class="portfolio-intro">
+        เกียรติบัตรและรางวัลจากการประกวดวงโยธวาทิตและวงดุริยางค์
+        ที่สะสมมาจากการฝึกซ้อมและการแข่งขันร่วมกับวง Banbung Symphonic Band
+      </p>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-frame">
+            <span class="cert-tag">GOLD MEDAL</span>
+            <img src="images/certificates/certificate-01-gold-medal.png" alt="เกียรติบัตรรางวัล Gold Medal จาก International Virtual Contest 2025">
+          </div>
+          <div class="cert-body">
+            <span class="cert-no">01 / INTERNATIONAL</span>
+            <h3>International Virtual Contest 2025</h3>
+            <p>Music &amp; Marching Arts International — รางวัล Gold Medal ระดับ Proficiency ร่วมกับ Banbung Symphonic Band</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-frame">
+            <span class="cert-tag">SILVER MEDAL</span>
+            <img src="images/certificates/certificate-02-silver-medal.png" alt="เกียรติบัตรรางวัลเหรียญเงินจากการประกวดวงโยธวาทิตชิงถ้วยพระราชทาน">
+          </div>
+          <div class="cert-body">
+            <span class="cert-no">02 / NATIONAL</span>
+            <h3>วงโยธวาทิตชิงถ้วยพระราชทาน ประจำปี 2564</h3>
+            <p>กรมพลศึกษา กระทรวงการท่องเที่ยวและกีฬา — รางวัลระดับเหรียญเงิน ประเภทนั่งบรรเลง รุ่นอายุไม่เกิน 18 ปี</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote">
+        “จังหวะไม่ใช่แค่การนับเวลา<br>แต่มันคือสิ่งที่ทำให้เพลงเดินไปข้างหน้า”
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <p class="mini-title">05 / CONTACT</p>
+        <h2>LET'S<br>MAKE<br><span>MUSIC.</span></h2>
+        <a class="email" href="mailto:s34790@banbung.ac.th">s34790@banbung.ac.th ↗</a>
+      </div>
+      <div class="contact-side">PEENAT<br>2026</div>
+    </section>
+  </main>
+
+  <footer>
+    <span>PEENAT®</span>
+    <span>WESTERN MUSIC / PERCUSSION</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
