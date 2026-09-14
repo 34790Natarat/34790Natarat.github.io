@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEENAT — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* --- เพิ่มเติมสำหรับรูปภาพในเกียรติบัตร + แกลเลอรีโมเมนต์ --- */
+    .cert-moment {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .cert-moment img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+      object-fit: cover;
+      max-height: 260px;
+    }
+    .cert-moment-caption {
+      display: block;
+      margin-top: 0.6rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+
+    .moments {
+      margin: 4rem 0;
+    }
+    .moments-head {
+      margin-bottom: 1.25rem;
+    }
+    .moment-hero {
+      margin: 0 0 0.75rem 0;
+      overflow: hidden;
+      border-radius: 4px;
+      position: relative;
+    }
+    .moment-hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .moments-grid {
+      column-count: 2;
+      column-gap: 0.75rem;
+    }
+    .moment {
+      position: relative;
+      margin: 0 0 0.75rem 0;
+      break-inside: avoid;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+    .moment img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .moment:hover img {
+      transform: scale(1.02);
+    }
+    .moment-caption {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.6rem 0.75rem;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.66rem;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      color: #fff;
+      background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+    @media (max-width: 720px) {
+      .moments-grid {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <a href="index.html" class="brand">PEENAT<span>®</span></a>
+    <div class="top-label">PERCUSSION / 2026</div>
+    <button class="menu-toggle" aria-label="เปิดเมนู">MENU</button>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">01 / HOME</a>
+    <a href="about.html">02 / ABOUT</a>
+    <a href="music.html">03 / MUSIC</a>
+    <a href="portfolio.html">04 / PORTFOLIO</a>
+    <a href="contact.html">05 / CONTACT</a>
+  </nav>
+
+  <main>
+    <section id="works" class="works section">
+      <div class="section-head">
+        <span>04</span>
+        <p>PORTFOLIO</p>
+      </div>
+
+      <p class="portfolio-intro">
+        เกียรติบัตรและรางวัลจากการประกวดวงโยธวาทิตและวงดุริยางค์
+        ที่สะสมมาจากการฝึกซ้อมและการแข่งขันร่วมกับวง Banbung Symphonic Band
+      </p>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-frame">
+            <span class="cert-tag">GOLD MEDAL</span>
+            <img src="images/certificates/certificate-02-silver-medal.png" alt="เกียรติบัตรรางวัล Gold Medal จาก International Virtual Contest 2025">
+          </div>
+          <div class="cert-body">
+            <span class="cert-no">01 / INTERNATIONAL</span>
+            <h3>International Virtual Contest 2025</h3>
+            <p>Music &amp; Marching Arts International — รางวัล Gold Medal ระดับ Proficiency ร่วมกับ Banbung Symphonic Band</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-frame">
+            <span class="cert-tag">SILVER MEDAL</span>
+            <img src="images/certificates/certificate-01-gold-medal.png" alt="เกียรติบัตรรางวัลเหรียญเงินจากการประกวดวงโยธวาทิตชิงถ้วยพระราชทาน">
+          </div>
+          <div class="cert-body">
+            <span class="cert-no">02 / NATIONAL</span>
+            <h3>วงโยธวาทิตชิงถ้วยพระราชทาน ประจำปี 2564</h3>
+            <p>กรมพลศึกษา กระทรวงการท่องเที่ยวและกีฬา — รางวัลระดับเหรียญเงิน ประเภทนั่งบรรเลง รุ่นอายุไม่เกิน 18 ปี</p>
+            <div class="cert-moment">
+              <img src="images/gallery/krom-phonsuksa-award.png" alt="พิธีมอบรางวัลประเภทนั่งบรรเลง วงโยธวาทิตชิงถ้วยพระราชทาน กรมพลศึกษา">
+              <span class="cert-moment-caption">พิธีมอบรางวัล — วงโยธวาทิต BANBUNG SYMPHONIC BAND</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="moments">
+        <div class="moments-head">
+          <span class="cert-no">MOMENTS ON STAGE</span>
+        </div>
+        <figure class="moment-hero">
+          <img src="images/gallery/ytimc-2025-stage.jpg" alt="วง Banbung Symphonic Band บรรเลงบนเวที Yamaha Thailand International Music Competition 2025">
+          <span class="moment-caption">YTIMC 2025 — การประกวดวงดุริยางค์เครื่องลมระดับนานาชาติ ณ Prince Mahidol Hall ม.มหิดล ศาลายา · 7 พ.ค. 2568</span>
+        </figure>
+
+        <div class="moments-grid">
+          <figure class="moment">
+            <img src="images/gallery/solo-percussion.png" alt="การแสดงเดี่ยวเครื่องเคาะจังหวะบนเวทีคอนเสิร์ต">
+            <span class="moment-caption">เข้าร่วมการประกวดวงดุริยางค์เครื่องลมระดับนานาชาติ Yamaha Thailand International Music Competition 2025 ณ Prince Mahidol Hall ม.มหิดล ศาลายา · 7 พ.ค. 2568</span>
+          </figure>
+          <figure class="moment">
+            <img src="images/gallery/rehearsal-conductor.png" alt="ซ้อมวงร่วมกับวาทยกรก่อนขึ้นแสดง">
+            <span class="moment-caption">ค่ายเยาวชนพหุปัญญา Soft Power ครั้งที่ 3 ด้านดนตรีสากล ปี 2568 — ตัวแทนภาคกลางและภาคตะวันออก ณ ร.ร.ชลราษฎรอำรุง จ.ชลบุรี · 27–28 ก.ย. 2568</span>
+          </figure>
+          <figure class="moment">
+            <img src="images/gallery/parade-marching.png" alt="ขบวนพาเหรดวงโยธวาทิตเดินแสดงบนท้องถนน">
+            <span class="moment-caption">ขบวนพาเหรดงานสงกรานต์เมืองชลบุรี ประจำปี 2567</span>
+          </figure>
+          <figure class="moment">
+            <img src="images/gallery/yamaha-crowd.png" alt="บรรยากาศความสุขของสมาชิกวงหลังการแสดง">
+          </figure>
+        </div>
+      </div>
+
+      <div class="quote">
+        “จังหวะไม่ใช่แค่การนับเวลา<br>แต่มันคือสิ่งที่ทำให้เพลงเดินไปข้างหน้า”
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>PEENAT®</span>
+    <span>WESTERN MUSIC / PERCUSSION</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
